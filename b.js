@@ -8,11 +8,23 @@ let dv = Base64.decode(obj.result.v);
 let dvobj = JSON.parse(dv);
 
 for (let i = 0; i < dvobj.mainCharacterDatas.length; i++) {
+  console.log("-> Char index:", i); 
+  console.log("--> bannedReason:", dvobj.mainCharacterDatas[i].banData.bannedReason);
+  console.log("--> enableBanLocal:", mainCharacterDatas[i].banData.enableBanLocal);
+  console.log("--> bypassCheckData:", dvobj.mainCharacterDatas[i].bypassCheckData);
+  console.log("--> old UUID:", dvobj.mainCharacterDatas[i].deviceIdWhenCreateCharacter);
   dvobj.mainCharacterDatas[i].banData.bannedReason = "";
   dvobj.mainCharacterDatas[i].banData.enableBanLocal = false;
   dvobj.mainCharacterDatas[i].bypassCheckData = true;
   dvobj.mainCharacterDatas[i].deviceIdWhenCreateCharacter = uuidVal;
+  console.log("---> Edited");
+  console.log("----> new bannedReason:", dvobj.mainCharacterDatas[i].banData.bannedReason);
+  console.log("----> new enableBanLocal:", mainCharacterDatas[i].banData.enableBanLocal);
+  console.log("----> new bypassCheckData:", dvobj.mainCharacterDatas[i].bypassCheckData);
+  console.log("----> new UUID:", dvobj.mainCharacterDatas[i].deviceIdWhenCreateCharacter);
+  console.log("");
 }
 
 obj.result.v = Base64.encode(JSON.stringify(dvobj));
 $done({body: JSON.stringify(obj)});
+  
