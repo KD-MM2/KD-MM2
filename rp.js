@@ -1,4 +1,5 @@
 var body = $response.body;
+const status = 'HTTP/1.1 200 OK';
 
 if ($prefs.valueForKey("regrant") == "huntroyale") {
   body =
@@ -6,4 +7,4 @@ if ($prefs.valueForKey("regrant") == "huntroyale") {
   console.log('triggered huntroyale body');
 }
 
-$done({ body });
+$done({ status, body });
