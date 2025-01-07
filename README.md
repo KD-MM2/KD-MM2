@@ -1,18 +1,9 @@
-<!-- ### Hi there 👋
-
-
-**KD-MM2/KD-MM2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-![KD-MM2's github stats](https://github-readme-stats.vercel.app/api?username=KD-MM2&show_icons=true&&hide=contribs,issues)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=KD-MM2&show_icons=true&theme=radical">
+  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=KD-MM2&show_icons=true&theme=default">
+</picture>
+<br>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=KD-MM2&theme=radical">
+  <img alt="Top Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KD-MM2&theme=default">
+</picture>
